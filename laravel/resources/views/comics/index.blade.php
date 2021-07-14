@@ -9,6 +9,7 @@
     <span> Prezzo: {{ $comic['price'] }} $ </span>
     <span>Data di uscita: {{ $comic['release_date'] }} </span>
     <span> Trama: {{ $comic['description'] }} </span>
+    @endforeach
 </div>
 
 @endsection

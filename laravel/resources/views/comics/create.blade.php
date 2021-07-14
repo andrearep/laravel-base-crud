@@ -14,7 +14,7 @@
     <input type="text" name="price" id="price" placeholder="Price">
     <label for="description">Description</label>
     <textarea type="text" name="description" id="description" placeholder="Description" rows="3">
-
+    </textarea>
     <button type="submit">Submit</button>
 
 </form>
