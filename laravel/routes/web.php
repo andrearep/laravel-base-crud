@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('comics', 'PageController@index')->name('posts');
-Route::get('comics/create',  'PageController@create')->name('posts.create');
-Route::post('comics',  'PageController@store')->name('posts.store');
-Route::get('comics//{comic}',  'PageController@show')->name('posts.show');
-Route::get('comics//{comic}/edit',  'PageController@edit')->name('posts.edit');
-Route::put('comics/{comic}',  'PageController@update')->name('posts.update');
-Route::delete('comics/{comic}',  'PageController@destroy')->name('posts.delete');
+Route::get('comics', 'PageController@index')->name('comics');
+Route::get('comics/create',  'PageController@create')->name('comics.create');
+Route::post('comics',  'PageController@store')->name('comics.store');
+Route::get('comics//{comic}',  'PageController@show')->name('comics.show');
+Route::get('comics//{comic}/edit',  'PageController@edit')->name('comics.edit');
+Route::put('comics/{comic}',  'PageController@update')->name('comics.update');
+Route::delete('comics/{comic}',  'PageController@destroy')->name('comics.delete');

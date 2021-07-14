@@ -25,7 +25,13 @@ class PageController extends Controller
      
     public function store(Request $request)
     {
-        return view('comics.store');
+        $comic = new Comic();
+        $comic->title = $request->title;
+        $comic->release_date = $request->release_date;
+        $comic->price = $request->price;
+        $comic->description = $request->description;
+        $comic->save();
+        return redirect()->router('movies.show',$comic->id);
     }
 
     public function create()
