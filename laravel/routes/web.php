@@ -21,3 +21,5 @@ Route::get('comics//{comic}',  'PageController@show')->name('comics.show');
 Route::get('comics//{comic}/edit',  'PageController@edit')->name('comics.edit');
 Route::put('comics/{comic}',  'PageController@update')->name('comics.update');
 Route::delete('comics/{comic}',  'PageController@destroy')->name('comics.delete');
+
+//Route::resource('comics', PageController::class);
