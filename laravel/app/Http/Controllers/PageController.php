@@ -33,7 +33,7 @@ class PageController extends Controller
         $comic->price = $request->price;
         $comic->description = $request->description;
         $comic->save();
-        return redirect()->router('movies.show',$comic->id);
+        return redirect()->route('comics.show',$comic->id);
     }
 
     public function create()
